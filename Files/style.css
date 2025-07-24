@@ -179,13 +179,6 @@ html {
     top: 25%;
     left: 75%;
 }
-
-#p1-bottom #b-left #plane img {
-    position: absolute;
-    height: 130px;
-    top: 75%;
-}
-
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -299,10 +292,24 @@ html {
     height: 100%;
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     flex-direction: column;
     align-items: center;
-    padding: 10vw;
+    padding-top: 10vw;
+}
+#pg2-left h3
+{
+    font-size: 3vw;
+    text-align: center;
+    width: 50%;
+}
+#pg2-left p
+{
+    font-size:1.5vw;
+    letter-spacing:.1vw;
+    line-height:2vw;
+    text-align: center;
+    margin-top: 1.5vw;
 }
 #pg2-right 
 {
@@ -313,4 +320,35 @@ html {
     background-position: center;
     background-size: cover;
     object-fit:cover;
+}
+
+#page3
+{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color:#F8F7F7;
+}
+
+#page3 #pg3-top
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+#upper img
+{
+ height: 15vw;
+ object-fit: cover;
+ position: relative;
+ left: 80%;
+ padding: 2vw 4vw;
+}
+#lower img
+{
+ height:20vw;
+ object-fit: cover;
+ position: absolute;
+ left: 120%;
+  padding: 2vw 4vw;
 }
