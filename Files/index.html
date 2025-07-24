@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -69,31 +71,64 @@
                 <div id="t-top">
                     <img src="assets/logo.webp" alt="">
                     <input type="search" placeholder="SEARCH">
+                    <i class="ri-search-line"></i>
                 </div>
                 <div id="t-bottom">
-                  <a href="#">Today</a>
-                  <a href="#">This Year</a>
-                  <a href="#">Birth Chart</a>
-                  <a href="#">Astro Hub</a>
-                  <a href="#">Features</a>
-                  <a href="#">App</a>
-                  <a href="#">Shop</a>
-                  <a href="#">Podcasts</a>
-                  <a href="#">About</a>
+                    <a href="#">Today</a>
+                    <a href="#">This Year</a>
+                    <a href="#">Birth Chart</a>
+                    <a href="#">Astro Hub</a>
+                    <a href="#">Features</a>
+                    <a href="#">App</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Podcasts</a>
+                    <a href="#">About</a>
                 </div>
             </div>
             <div id="p1-bottom">
                 <div id="b-left">
                     <h1>Hello and welcome.</h1>
+                    <img src="assets/smile.webp" alt="">
                     <div id="star">
                         <img src="assets/star.webp" alt="">
                     </div>
+                    <div id="plane">
+                        <img src="assets/plane.webp" alt="">
+                    </div>
                 </div>
-                <div id="b-right"></div>
+                <div id="b-right">
+                    <img src="assets/megaphone-removebg-preview.png" alt="">
+                    <div class="swiper mySwiper">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h3>This just in!</h3>
+                                <p>New Sleep Stories just dropped in the CHANI app. Prepare to de-stress and drift off.
+                                </p>
+                                <button>Try Sleep Stories</button>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3>In need of a breakthrough?</h3>
+                                <p>This brand-new 28-day course by Chani Nicholas is here to help you unblock your
+                                    abundance.</p>
+                                <button>Get Started in the Chani App</button>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div id="page2">
+             <div id="pg2-left">
+                <h3>Want more astro updates?</h3>
+                <p>Click and scroll for the latest. Or peek what’s coming soon.</p>
+             </div>
+             <div id="pg2-right"></div>
+        </div>
     </div>
-        <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
