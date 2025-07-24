@@ -14,10 +14,31 @@ window.addEventListener("scroll",()=>
 
   if (scrollY >= triggerPoint) {
     let moveAmount = (scrollY );
-    lip.style.height = moveAmount * 0.3 + "px";
+    lip.style.height = -10 + moveAmount * 0.17 + "px";
   }
    else 
   {
     lip.style.Height = "30vw";
+  }
+})
+
+let tiger = document.querySelector("#tiger");
+let astro = document.querySelector("#astro");
+
+window.addEventListener("scroll",()=>
+{
+let scrollY = window.scrollY;
+  let triggerPoint =tiger.offsetTop - window.innerHeight;
+
+  if (scrollY >= triggerPoint) 
+  {
+    let moveAmount = (scrollY );
+    tiger.style.height = moveAmount * 0.1 + "px";
+    astro.style.height = moveAmount * 0.1 + "px";
+  }
+   else 
+  {
+    tiger.style.height = "270px";
+    astro.style.height= "270px";
   }
 })
