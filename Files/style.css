@@ -8,8 +8,9 @@ body,
 html {
     height: 100%;
     width: 100%;
-    background-color: #FBFBFB;
+    /* background-color: #FBFBFB; */
     font-family: Apercu Mono, Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 #banner {
@@ -286,6 +287,7 @@ html {
     width: 100%;
     background-color: #F8F7F7;
     display: flex;
+    position: relative;
 }
 
 #pg2-left {
@@ -325,16 +327,18 @@ html {
 #page3 {
     min-height: 100vh;
     width: 100%;
-    position: absolute;
-    background-color: #F8F7F7;
+    position: relative;
+    /* background-color: #F8F7F7; */
 }
 
 #images {
-    height: 60%;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     position: absolute;
+    z-index: 100;
+
 }
 
 #images #starr {
@@ -357,7 +361,7 @@ html {
 .card-container {
     /* background-color: aquamarine; */
     position: absolute;
-    top: 85%;
+    /* top: 85%; */
     width: 100%;
     height: 100vh;
     right: 0;
@@ -366,6 +370,7 @@ html {
     background-color: #F8F7F7;
     padding: 5vw;
     font-weight: 200;
+    top:100%;
 }
 
 .card-container h3 {
@@ -436,11 +441,11 @@ html {
 }
 
 #playlist {
-    /* height:30%; */
+    height: 50%;
     background-color: #F8F7F7;
     width: 100%;
     position: absolute;
-    top: 180%;
+    /* top: 180%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -467,7 +472,7 @@ html {
     height: 100vh;
     width: 100%;
     background-color: #FBFBFB;
-    top: 220%;
+    top: 50%;
     padding: 5vw;
     display: flex;
     justify-content: space-around;
@@ -579,9 +584,8 @@ html {
 }
 
 #page4 .cards {
-    /* background-color: aquamarine; */
     position: absolute;
-    top: 290%;
+    top: 130%;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -650,4 +654,212 @@ html {
     border-radius: 10px;
     width: 50%;
     text-transform: uppercase;
+}
+
+#page4 #chain-img {
+    height: 250vh;
+    width: 100%;
+    position: absolute;
+    top: 240%;
+    /* transition: all ease-in-out 3s; */
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    /* background-color: red; */
+    bottom: 0;
+}
+
+
+#chain-img #chain {
+    top: .9%;
+    position: absolute;
+    z-index: 999;
+    right: -12%;
+    transform: rotateX(13deg)
+}
+
+#chain-img #hand {
+    position: absolute;
+    top:38%;
+    transform: rotate(180deg);
+    height: 25vw;
+    right: -10%;
+    z-index: 8;
+}
+
+#diamond {
+    position: absolute;
+    bottom: 46%;
+    left: 29%;
+    transform: rotate(-10deg);
+}
+
+#chani {
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+    transform: rotate(-15deg);
+}
+
+#circle {
+    position: absolute;
+    bottom: 40%;
+    left: 5%;
+
+}
+
+#chain-img #p1 {
+    position: absolute;
+    width: 20%;
+    transform: rotate(-10deg);
+    left: 9%;
+    top: 45%;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+#chain-img #p2 {
+    position: absolute;
+    width: 40%;
+    transform: rotate(-10deg);
+    left: 15%;
+    top: 69%;
+    letter-spacing: 1px;
+}
+
+#wheel 
+{
+    position: absolute;
+    height: 50vw;
+    right: 10%;
+    top: 50%;
+    z-index: 7;
+}
+
+#chain-img button {
+    text-transform: uppercase;
+    font-size: 1vw;
+    border: 1px solid black;
+    padding: 1.5vw 3vw;
+    border-radius: 10px;
+    width: fit-content;
+    position: absolute;
+    right: 27%;
+    top: 95%;
+}
+#speed
+{
+    min-height: 210vh;
+    width: 100%;
+    /* background-color: burlywood; */
+    position: absolute;
+    top:490%;
+    bottom: 0;
+    overflow-y: hidden;
+}
+#speed h3
+{
+    padding: 5vw;
+    font-size: 2vw;
+    text-align: center;
+}
+#speed #speedlimit
+{
+    position: absolute;
+    left: 40%;
+}
+#speed #chicken
+{
+    position: absolute;
+    left:10%;
+}
+#speed #retro
+{
+    position: absolute;
+    left: 33%;
+    top:45%;
+}
+
+#mchani
+{
+    min-height:fit-content;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top:62%;
+    left: 10%;
+}
+#sec
+{
+    height:fit-content;
+    padding: 5vw;
+    width: 100%;
+}
+#sec h3{
+    width: 100%;
+    font-size: 2.5vw;
+    height: 25%;
+    padding: 1vw .5vw;
+}
+#sec p
+{
+    width:60%;
+    text-align: left;
+    margin-left:9vw;
+    font-size: 1.2vw;
+    padding-bottom: 2vw;
+}
+#sec button {
+    font-size: 1vw;
+    border: 1px solid black;
+    padding:1.5vw .5vw;
+    border-radius: 10px;
+    width: 30%;
+    text-transform: uppercase;
+    margin-left:9vw;
+}
+#footer
+{
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    top:600%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10vw 5vw 10vw 5vw;
+    overflow: hidden;
+}
+.tags
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#footer #rght
+{
+    width:60%;
+   display: flex;
+   gap: 100px;
+}
+#footer #rght a
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.587);
+    font-size: 1vw;
+}
+#footer #left
+{
+    width: 55%;
+    border-left: 1px solid #0000008a;
+}
+#left #mail
+{
+    display: flex;
+
+}
+#left h2
+{
+    font-size: vw;
 }
