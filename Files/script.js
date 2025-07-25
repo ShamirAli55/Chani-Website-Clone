@@ -12,10 +12,11 @@ window.addEventListener("scroll", () => {
   let scrollY = window.scrollY;
   let triggerPoint = lip.offsetTop - window.innerHeight;
 
-  if (scrollY >= triggerPoint) {
+  if (scrollY > triggerPoint) {
     let moveAmount = scrollY;
     lip.style.height = -10 + moveAmount * 0.17 + "px";
-  } else {
+  } 
+  else {
     lip.style.Height = "30vw";
   }
 });
@@ -44,8 +45,6 @@ window.addEventListener("scroll", () => {
 });
 
 
-
-
 let chain = document.querySelector("#chain");
 
 window.addEventListener("scroll", () => {
@@ -56,5 +55,37 @@ window.addEventListener("scroll", () => {
     let tilt = Math.sin(scrollY * 0.01) * 6;
 
     chain.style.transform = `rotateZ(${tilt}deg)`;
+  }
+});
+
+
+
+let diamond = document.querySelector("#diamond");
+window.addEventListener("scroll", () => {
+  let scrollY = window.scrollY;
+  let triggerPoint = diamond.offsetTop - window.innerHeight;
+
+  if (scrollY > triggerPoint) {
+    let moveAmount = scrollY;;
+    diamond.style.bottom =  -5 + moveAmount * 0.161 + "px";
+  } 
+  else {
+    diamond.style.bottom = "60%";
+  }
+});
+
+
+
+let hand = document.querySelector("#hand");
+window.addEventListener("scroll", () => {
+  let scrollY = window.scrollY;
+  let triggerPoint = hand.offsetTop - window.innerHeight;
+
+  if (scrollY > triggerPoint) {
+    let moveAmount = scrollY;
+    hand.style.right =  -550 + moveAmount * 0.1 + "px";
+  } 
+  else {
+    hand.style.right= "-10%";
   }
 });
