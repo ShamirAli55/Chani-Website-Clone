@@ -89,3 +89,35 @@ window.addEventListener("scroll", () => {
     hand.style.right= "-10%";
   }
 });
+
+
+
+let chani= document.querySelector("#chani");
+
+window.addEventListener("scroll", () => {
+  let scrollY = window.scrollY;
+  let triggerPoint = chani.offsetTop - window.innerHeight;
+
+  if (scrollY >= triggerPoint) {
+    let tilt = Math.sin(scrollY * 0.01) * 5;
+
+    chani.style.transform = `rotate(${tilt}deg)`;
+  }
+});
+
+
+
+let chicken= document.querySelector("#chicken");
+window.addEventListener("scroll", () => {
+  let scrollY = window.scrollY;
+  let triggerPoint = chicken.offsetTop - window.innerHeight;
+
+  if (scrollY > triggerPoint) {
+    let moveAmount = scrollY;;
+    chicken.style.bottom =  -5 + moveAmount * 0.16 + "px";
+  } 
+  else {
+    chicken.style.left = "10%";
+  }
+});
+
