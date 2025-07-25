@@ -66,5 +66,4 @@ This project was created after watching tutorials from **Sheriyans Coding School
 
 **Shamir Ali**  
 GitHub: [@ShamirAli55](https://github.com/ShamirAli55)
-```
 
