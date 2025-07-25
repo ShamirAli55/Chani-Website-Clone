@@ -104,3 +104,16 @@ window.addEventListener("scroll", () => {
     chicken.style.left = "10%";
   }
 });
+
+let plane = document.querySelector("#plane");
+window.addEventListener("scroll", () => {
+  let scrollY = window.scrollY;
+  let triggerPoint = plane.offsetTop - window.innerHeight;
+
+  if (scrollY > triggerPoint) {
+    let moveAmount = scrollY;
+    plane.style.left = 120 + moveAmount * 0.3 + "px";
+  } else {
+    plane.style.top = "75%";
+  }
+});
