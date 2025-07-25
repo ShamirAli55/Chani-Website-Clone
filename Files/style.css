@@ -8,8 +8,9 @@ body,
 html {
     height: 100%;
     width: 100%;
-    background-color: #FBFBFB;
+    /* background-color: #FBFBFB; */
     font-family: Apercu Mono, Arial, sans-serif;
+    background-color: orange;
     /* overflow-x: hidden; */
 }
 
@@ -23,6 +24,7 @@ html {
     border-bottom: 1px solid black;
     padding-bottom: .3vw;
     background-color: #FBFBFB;
+    overflow-y: hidden;
 }
 
 #banner::-webkit-scrollbar {
@@ -285,7 +287,7 @@ html {
 #page2 {
     height: 100vh;
     width: 100%;
-    background-color: #F8F7F7;
+    /* background-color: #F8F7F7; */
     display: flex;
     position: relative;
 }
@@ -338,7 +340,8 @@ html {
     flex-direction: column;
     position: absolute;
     z-index: 100;
-
+   overflow: hidden;
+   /* overflow-y: auto; */
 }
 
 #images #starr {
@@ -370,18 +373,20 @@ html {
     padding: 5vw;
     font-weight: 200;
     top: 100%;
+    background-color: aqua;
+    z-index: 100;
 }
 
 .card-container h3 {
     left: 35%;
     position: absolute;
     top: 0;
-    padding: 1vw;
+    padding: 2vw;
     font-size: 2vw;
 }
 
 .card-container .card {
-    padding: 1vw;
+    padding: 2vw;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -440,18 +445,22 @@ html {
     position: relative;
 }
 
-#playlist {
-    height: 50%;
-    background-color: #F8F7F7;
+#playlist
+ {
+    height:20vh;
+    /* background-color: #F8F7F7; */
     width: 100%;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+    top:100%;
+    background-color: rebeccapurple;
 }
 
 #playlist h3 {
-    /* text-align: center; */
+    text-align: center;
     padding: 7vw;
 }
 
@@ -466,20 +475,25 @@ html {
     height: 90px;
 }
 
-#play-cards {
+#play-cards 
+{
+    background-color: red;
+    z-index: 999;
     position: absolute;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
-    background-color: #FBFBFB;
-    top: 50%;
+    /* background-color: #FBFBFB; */
+    top: 120%;
     padding: 5vw;
     display: flex;
     justify-content: space-around;
 }
 
-#card-1 {
+#card-1 
+{
     height: 70%;
     width: 45%;
+    margin-top:8vw;
     border: 1px solid;
     border-radius: 10px;
     transform: rotate(-2);
@@ -494,7 +508,6 @@ html {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 #card-1 h3 {
     width: 50%;
     padding-bottom: .5vw;
@@ -512,12 +525,13 @@ html {
 
 #card-1 img {
     position: absolute;
-    top: 60%;
+    top: 75%;
 }
 
 #card-2 {
     height: 70%;
     width: 45%;
+    margin-top: 8vw;
     border: 1px solid;
     border-radius: 10px;
     transform: rotate(-1deg);
@@ -553,45 +567,43 @@ html {
     top: 90%;
 }
 
-.mini-card {
-    height: auto;
-}
 
 .mini-card1 img {
-    height: 270px;
+    height: 200px;
+   transform: scale(1.5);
     background-position: center;
     background-size: cover;
     object-fit: cover;
     position: absolute;
-    z-index: 100;
-    border-radius: 10px;
-    left: 18%;
-    top: -10%;
+    border-radius: 20px;
+    left:20%;
+    top:20%;
 }
 
 .mini-card2 img {
+        height: 200px;
     /* background-color: #FBFBFB; */
-    height: 270px;
+    transform: scale(1.5);
     background-position: center;
     background-size: cover;
     object-fit: cover;
     position: absolute;
-    z-index: 100;
     border-radius: 10px;
-    left: 60%;
-    top: -15%;
+    left: 63%;
+    top:15%;
 }
 
 #page4 .cards {
     position: absolute;
-    top: 130%;
+    top: 240%;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: space-between;
-    /* background-color: red; */
+    background-color: rosybrown;
     padding: 6vw;
     font-weight: 200;
+    z-index: 999;
 }
 
 .cards h3 {
@@ -659,8 +671,8 @@ html {
     height: 250vh;
     width: 100%;
     position: absolute;
-    top:240%;
-    transition: all ease-in-out 3s;
+    top:350%;
+    /* transition: all ease-in-out 3s; */
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -750,7 +762,7 @@ html {
     width: 100%;
     /* background-color: burlywood; */
     position: absolute;
-    top: 490%;
+    top: 600%;
     bottom: 0;
     overflow-y: hidden;
 }
@@ -774,7 +786,7 @@ html {
 #speed #retro {
     position: absolute;
     left: 33%;
-    top: 45%;
+    top: 38%;
 }
 
 #mchani {
@@ -824,7 +836,7 @@ html {
     width: 100%;
     position: relative;
     bottom: 0;
-    top: 600%;
+    top: 700%;
     display: flex;
     justify-content: space-around;
     padding: 8vw 5vw 10vw 3vw;
@@ -892,7 +904,7 @@ html {
     width: 100%;
     /* background-color: aquamarine; */
     position: relative;
-    top: 600%;
+    top: 690%;
     display: flex;
     flex-direction: column;
     align-items: center;

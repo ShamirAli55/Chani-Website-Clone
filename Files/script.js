@@ -1,10 +1,11 @@
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
+var swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
   pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+    el: '.swiper-pagination',
+    clickable: true
+  }
 });
+
 
 let lip = document.querySelector("#lip");
 window.addEventListener("scroll", () => {
@@ -19,6 +20,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
 let tiger = document.querySelector("#tiger");
 let astro = document.querySelector("#astro");
 
@@ -27,14 +29,22 @@ window.addEventListener("scroll", () => {
   let triggerPoint = tiger.offsetTop - window.innerHeight;
 
   if (scrollY >= triggerPoint) {
-    let moveAmount = scrollY;
-    tiger.style.height = moveAmount * 0.1 + "px";
-    astro.style.height = moveAmount * 0.1 + "px";
-  } else {
-    tiger.style.height = "270px";
-    astro.style.height = "270px";
+    let offset = scrollY - triggerPoint;
+    
+    let tigerScale = Math.min( offset * 0.0005, 2);  
+    let astroScale = Math.max( offset * 0.0005, 1.5); 
+
+    tiger.style.transform = `scale(${tigerScale})`;
+    astro.style.transform = `scale(${astroScale})`;
+  } 
+  else {
+    tiger.style.transform = `scale(0.3)`;
+    astro.style.transform = `scale(0.8)`;
   }
 });
+
+
+
 
 let chain = document.querySelector("#chain");
 
