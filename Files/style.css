@@ -433,7 +433,8 @@ html {
     text-transform: uppercase;
 }
 
-#page4 {
+#page4
+{
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -658,24 +659,23 @@ html {
     height: 250vh;
     width: 100%;
     position: absolute;
-    top: 240%;
+    top:240%;
     transition: all ease-in-out 3s;
     background-position: center;
     background-size: cover;
     object-fit: cover;
     /* background-color: red; */
     bottom: 0;
+    overflow: hidden;
 }
 
 
 #chain-img #chain {
     top: .9%;
     position: absolute;
-    z-index: 999;
     right: -12%;
-    transform: rotateX(13deg)
+    transform: rotateX(13deg);
 }
-
 #chain-img #hand {
     position: absolute;
     top: 38%;
@@ -746,7 +746,7 @@ html {
 }
 
 #speed {
-    min-height: 210vh;
+    min-height: 230vh;
     width: 100%;
     /* background-color: burlywood; */
     position: absolute;
@@ -782,7 +782,7 @@ html {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 62%;
+    top: 59%;
     left: 10%;
 }
 
@@ -819,6 +819,7 @@ html {
 
 #footer {
     /* background-color: red; */
+    margin-top: 9vw;
     height: 70vh;
     width: 100%;
     position: relative;
